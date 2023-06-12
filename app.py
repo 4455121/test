@@ -4,7 +4,7 @@ import numpy as np
 from scipy.signal import lti, step
 import matplotlib.pyplot as plt
 from scipy import signal
-
+def main():
 st.title("조상희")
 st.header("202221016")
 
@@ -60,7 +60,6 @@ plt.legend()
 st.pyplot(fig2)
 
 
-
 #Bode phase plot
 plt.subplot(2,1,2)
 fig3 = plt.figure()
@@ -71,3 +70,6 @@ plt.ylabel('Phase [degrees]')
 plt.xlabel('Frequency [Hz]')
 plt.show()
 st.pyplot(fig3)
+
+if __name__ == "__main__":
+    main()

@@ -64,8 +64,8 @@ def main():
   plt.subplot(2,1,2)
   fig3 = plt.figure()
   for sys,_,color in zip(systems,labels, colors):
-  w,_,phase = sys.bode(frequencies)
-  plt.semilogx(w,phase,color=color)
+      w,_,phase = sys.bode(frequencies)
+      plt.semilogx(w,phase,color=color)
   plt.ylabel('Phase [degrees]')
   plt.xlabel('Frequency [Hz]')
   plt.show()

@@ -53,7 +53,7 @@ def main():
   fig2 = plt.figure()
   for sys,label,color in zip(systems,labels, colors):
     w,mag,_ = sys.bode(frequencies)
-  plt.semilogx(w,mag,color=color, label=label)
+    plt.semilogx(w,mag,color=color, label=label)
   plt.title('Bode plot')
   plt.ylabel('Magnitude [dB]')
   plt.legend()
